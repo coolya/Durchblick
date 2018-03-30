@@ -17,5 +17,16 @@ cache:
 
 build:
   stage: build
+  artifacts:
+      expire_in: 1 week
+      paths:
+        - artifacts/de.itemis.mps.generator.editors
   script:
     - ./gradlew build
+
+release:
+  stage: deploy
+  script:
+    - ./gradlew githubRelease
+  only:
+    - master
