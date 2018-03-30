@@ -1,0 +1,20 @@
+{
+    "ant_lib": {
+        "org.apache.ant:ant-junit": {
+            "locked": "1.10.1",
+            "requested": "1.10.1"
+        }
+    },
+    "mps": {
+        "com.jetbrains:mps": {
+            "locked": "2017.3.5",
+            "requested": "2017.3.5"
+        }
+    },
+    "mpsExtensions": {
+        "de.itemis.mps:extensions": {
+            "locked": "0.1.82.b8a59d8",
+            "requested": "0.1+"
+        }
+    }
+}
