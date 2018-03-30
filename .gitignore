@@ -54,3 +54,4 @@ doc_gen/
 # -----------------------------------------------------------
 .gradle/
 gradle.properties
+projectlibraries.overrides.properties
