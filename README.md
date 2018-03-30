@@ -6,7 +6,7 @@ This projects aims to provide a set of editors for the MPS generator language th
 by showing certain aspects that are usually hidden in the inspects in the main editor.
 
 
-[![global lib](docs/generator_comparison.png)]
+[![comparison](docs/generator_comparison.jpg)]
 
 ## State
 Currently this is more less a quick hack to see if it technically works. The editor experience is pretty bad at the
