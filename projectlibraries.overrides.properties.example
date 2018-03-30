@@ -1,0 +1,2 @@
+# To override values defined in this file create projectlibraries.overrides.properties and put overridden values there.
+mps-extensions=${extensions.home}/code
