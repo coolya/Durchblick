@@ -133,7 +133,7 @@ github {
     tagName =  "v-$version"
     targetCommitish = System.getenv().CI_COMMIT_SHA != null ? System.getenv().CI_COMMIT_SHA : "master"
     name =  "MPS Generator Editors $version"
-    body = ReleaseNotes.getReleaseNotes(file("ReleaseNotes.md"))
+    body = ReleaseNotes.getReleaseNotes(file("RELEASE_NOTES.md"))
     assets = releaseArtifacts
 }
 
