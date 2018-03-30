@@ -22,6 +22,7 @@ buildscript {
 
 plugins {
     id "nebula.dependency-lock" version "4.9.5"
+    id "co.riiid.gradle" version "0.4.2"
 }
 
 apply plugin: 'base'
@@ -32,7 +33,7 @@ ext.dependencyRepositories = [
         'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
 ]
 
-ext.version = "0.1"
+def version = "0.1"
 
 repositories {
     for (repoUrl in project.dependencyRepositories) {
@@ -72,7 +73,7 @@ dependencies {
 }
 
 ext.buildScriptClasspath = project.configurations.ant_lib.fileCollection({ true })
-ext.defaultScriptArgs = ["-Dversion=$ext.version", "-Dartifacts.root=${ext.artifactsDir.getAbsolutePath()}", "-Dbuild.dir=${rootProject.projectDir.absolutePath}"]
+ext.defaultScriptArgs = ["-Dversion=$version", "-Dartifacts.root=${ext.artifactsDir.getAbsolutePath()}", "-Dbuild.dir=${rootProject.projectDir.absolutePath}"]
 
 
 task resolveMps(type: Copy) {
@@ -120,4 +121,21 @@ task build_languages(type: BuildLanguages, dependsOn: allScripts) {
     script scriptFile('build-all.xml')
 }
 
+def releaseArtifacts = new File(artifactsDir, "de.itemis.mps.generator.editors")
+        .listFiles()
+        .findAll {it.name.endsWith("zip")}
+        .each {it.absolutePath}
+
+github {
+    owner = 'coolya'
+    repo = 'mps-generator-editors'
+    token =  System.getenv().GITHUB_TOKEN != null ? System.getenv().GITHUB_TOKEN : "empty"
+    tagName =  "v-$version"
+    targetCommitish = System.getenv().CI_COMMIT_SHA != null ? System.getenv().CI_COMMIT_SHA : "master"
+    name =  "MPS Generator Editors $version"
+    body = ReleaseNotes.getReleaseNotes(file("ReleaseNotes.md"))
+    assets = releaseArtifacts
+}
+
 build.dependsOn build_languages
+//githubRelease.dependsOn build
