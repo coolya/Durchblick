@@ -32,6 +32,8 @@ ext.dependencyRepositories = [
         'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
 ]
 
+ext.version = "0.1"
+
 repositories {
     for (repoUrl in project.dependencyRepositories) {
         maven {
@@ -70,7 +72,7 @@ dependencies {
 }
 
 ext.buildScriptClasspath = project.configurations.ant_lib.fileCollection({ true })
-ext.defaultScriptArgs = ["-Dversion=$version"]
+ext.defaultScriptArgs = ["-Dversion=$ext.version", "-Dartifacts.root=${ext.artifactsDir.getAbsolutePath()}", "-Dbuild.dir=${rootProject.projectDir.absolutePath}"]
 
 
 task resolveMps(type: Copy) {

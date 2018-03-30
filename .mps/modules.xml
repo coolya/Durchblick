@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.generator.editors/de.itemis.mps.generator.editors.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.generartor.editors.build/de.itemis.mps.generartor.editors.build.msd" folder="_build" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.generator.editors.plugin/de.itemis.mps.generator.editors.plugin.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.generators.editors.build.meta/de.itemis.mps.generators.editors.build.meta.msd" folder="_build" />
     </projectModules>
   </component>
