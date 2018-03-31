@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:29e3785c-bfe3-4352-ae01-94f88fec9f9a(de.itemis.mps.generators.editors.build.meta.all)">
+<model ref="r:29e3785c-bfe3-4352-ae01-94f88fec9f9a(de.itemis.mps.generators.editors.build.meta.all)" content="root">
   <persistence version="9" />
-  <languages>
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-  </languages>
   <imports>
-    <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" />
-    <import index="639z" ref="r:a650770d-512c-4713-b54a-50c3961c80ca(de.itemis.mps.generartor.editors.build.all)" />
+    <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" implicit="true" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" implicit="true" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
