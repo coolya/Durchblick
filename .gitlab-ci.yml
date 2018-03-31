@@ -26,7 +26,8 @@ build:
 
 release:
   stage: deploy
-  script:
-    - ./gradlew githubRelease
+  when: manual
   only:
     - master
+  script:
+    - ./gradlew githubRelease
