@@ -7,14 +7,14 @@
     },
     "mps": {
         "com.jetbrains:mps": {
-            "locked": "2017.3.5",
-            "requested": "2017.3.5"
+            "locked": "2018.2.5",
+            "requested": "2018.2.5"
         }
     },
     "mpsExtensions": {
         "de.itemis.mps:extensions": {
-            "locked": "0.1.82.b8a59d8",
-            "requested": "0.1+"
+            "locked": "2018.2.379.7ad274d",
+            "requested": "2018.2.+"
         }
     }
 }
