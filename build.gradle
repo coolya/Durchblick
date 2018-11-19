@@ -33,7 +33,7 @@ ext.dependencyRepositories = [
         'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
 ]
 
-def version = "0.1"
+def version = "0.2"
 
 repositories {
     for (repoUrl in project.dependencyRepositories) {
@@ -57,7 +57,7 @@ File scriptFile(String relativePath) {
     new File("$rootDir/build/generated/$relativePath")
 }
 
-def mpsBuild = "2017.3.5"
+def mpsBuild = "2018.2.5"
 
 // configs
 configurations {
@@ -68,7 +68,7 @@ configurations {
 
 dependencies {
     mps "com.jetbrains:mps:$mpsBuild"
-    mpsExtensions "de.itemis.mps:extensions:0.1+"
+    mpsExtensions "de.itemis.mps:extensions:2018.2.+"
     ant_lib "org.apache.ant:ant-junit:1.10.1"
 }
 
