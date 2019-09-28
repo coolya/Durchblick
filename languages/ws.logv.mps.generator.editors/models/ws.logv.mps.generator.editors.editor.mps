@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:f7936663-dbe5-4690-bf1f-845021925960(de.itemis.mps.generator.editors.editor)">
+<model ref="r:f7936663-dbe5-4690-bf1f-845021925960(ws.logv.mps.generator.editors.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />

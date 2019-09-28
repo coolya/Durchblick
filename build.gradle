@@ -100,7 +100,7 @@ task build_languages(type: BuildLanguages, dependsOn: allScripts) {
     script scriptFile('build-all.xml')
 }
 
-def releaseArtifacts = new File(artifactsDir, "de.itemis.mps.generator.editors")
+def releaseArtifacts = new File(artifactsDir, "ws.logv.mps.generator.editors")
         .listFiles()
         .findAll {it.name.endsWith("zip")}
         .each {it.absolutePath}
