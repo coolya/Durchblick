@@ -11,29 +11,31 @@ import de.itemis.mps.gradle.GenerateLibrariesXml
 
 buildscript {
     repositories {
-        mavenLocal()
+        mavenCentral()
         maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
     }
 
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.0.57.+'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.+'
+    }
+
+    configurations.classpath {
+        resolutionStrategy.activateDependencyLocking()
     }
 }
 
 plugins {
-    id "nebula.dependency-lock" version "4.9.5"
     id "co.riiid.gradle" version "0.4.2"
 }
 
 apply plugin: 'base'
-apply plugin: "nebula.dependency-lock"
 
 ext.dependencyRepositories = [
         'https://projects.itemis.de/nexus/content/repositories/mbeddr',
         'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
 ]
 
-def version = "0.2"
+def version = "0.3"
 
 repositories {
     for (repoUrl in project.dependencyRepositories) {
@@ -57,7 +59,7 @@ File scriptFile(String relativePath) {
     new File("$rootDir/build/generated/$relativePath")
 }
 
-def mpsBuild = "2018.2.5"
+def mpsBuild = "2019.2.1"
 
 // configs
 configurations {
@@ -68,9 +70,15 @@ configurations {
 
 dependencies {
     mps "com.jetbrains:mps:$mpsBuild"
-    mpsExtensions "de.itemis.mps:extensions:2018.2.+"
+    mpsExtensions "de.itemis.mps:extensions:2019.2.+"
     ant_lib "org.apache.ant:ant-junit:1.10.1"
 }
+
+dependencyLocking {
+    lockAllConfigurations()
+}
+
+
 
 ext.buildScriptClasspath = project.configurations.ant_lib.fileCollection({ true })
 ext.defaultScriptArgs = ["-Dversion=$version", "-Dartifacts.root=${ext.artifactsDir.getAbsolutePath()}", "-Dbuild.dir=${rootProject.projectDir.absolutePath}"]

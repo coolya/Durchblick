@@ -7,14 +7,14 @@
     },
     "mps": {
         "com.jetbrains:mps": {
-            "locked": "2018.2.5",
-            "requested": "2018.2.5"
+            "locked": "2019.2.1",
+            "requested": "2019.2.1"
         }
     },
     "mpsExtensions": {
         "de.itemis.mps:extensions": {
-            "locked": "2018.2.379.7ad274d",
-            "requested": "2018.2.+"
+            "locked": "2019.2.1104.9a69960",
+            "requested": "2019.2.+"
         }
     }
 }
