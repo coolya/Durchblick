@@ -1,0 +1,25 @@
+# This is a Gradle generated file for dependency locking.
+# Manual edits can break the build and are not advised.
+# This file is expected to be part of source control.
+co.riiid.gradle:co.riiid.gradle.gradle.plugin:0.4.2
+commons-beanutils:commons-beanutils:1.8.0
+commons-codec:commons-codec:1.6
+commons-collections:commons-collections:3.2.1
+commons-lang:commons-lang:2.4
+commons-logging:commons-logging:1.1.1
+de.itemis.mps:mps-gradle-plugin:1.2.175.cc60dc8
+gradle.plugin.co.riiid:gradle-github-plugin:0.4.2
+net.sf.ezmorph:ezmorph:1.0.6
+net.sf.json-lib:json-lib:2.3
+net.sourceforge.nekohtml:nekohtml:1.9.16
+org.apache.httpcomponents:httpclient:4.2.1
+org.apache.httpcomponents:httpcore:4.2.1
+org.codehaus.groovy.modules.http-builder:http-builder:0.7.1
+org.jetbrains.kotlin:kotlin-stdlib-common:1.3.11
+org.jetbrains.kotlin:kotlin-stdlib:1.3.11
+org.jetbrains:annotations:13.0
+org.slf4j:slf4j-api:1.6.6
+org.zeroturnaround:zt-zip:1.8
+xerces:xercesImpl:2.9.1
+xml-apis:xml-apis:1.3.04
+xml-resolver:xml-resolver:1.2

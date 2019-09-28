@@ -32,7 +32,6 @@ apply plugin: 'base'
 
 ext.dependencyRepositories = [
         'https://projects.itemis.de/nexus/content/repositories/mbeddr',
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
 ]
 
 def version = "0.3"
@@ -41,12 +40,6 @@ repositories {
     for (repoUrl in project.dependencyRepositories) {
         maven {
             url repoUrl
-            if (project.hasProperty('nexusUsername')) {
-                credentials {
-                    username project.nexusUsername
-                    password project.nexusPassword
-                }
-            }
         }
     }
     mavenCentral()
@@ -64,13 +57,11 @@ def mpsBuild = "2019.2.1"
 // configs
 configurations {
     mps
-    mpsExtensions
     ant_lib
 }
 
 dependencies {
     mps "com.jetbrains:mps:$mpsBuild"
-    mpsExtensions "de.itemis.mps:extensions:2019.2.+"
     ant_lib "org.apache.ant:ant-junit:1.10.1"
 }
 
@@ -93,28 +84,8 @@ task resolveMps(type: Copy) {
     doFirst { delete mpsDir }
 }
 
-task resolveMpsArtifacts(type: Copy) {
-    dependsOn configurations.mpsExtensions
-    from {
-        configurations.mpsExtensions.resolve().collect { zipTree(it) }
-    }
-    into artifactsDir
-}
 
-task generateLibrariesXml(type: GenerateLibrariesXml) {
-    description "Will read project libraries from projectlibraries.properties and generate libraries.xml in .mps directory. Libraries are loaded in mps during start."
-    defaults rootProject.file('projectlibraries.properties')
-    overrides rootProject.file('projectlibraries.overrides.properties')
-    destination file('.mps/libraries.xml')
-}
-
-task setup {
-    dependsOn resolveMpsArtifacts
-    dependsOn generateLibrariesXml
-    description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
-}
-
-task allScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts]){
+task allScripts(type: BuildLanguages, dependsOn: [resolveMps]){
     group "generate scripts"
     scriptArgs = defaultScriptArgs
     scriptClasspath = buildScriptClasspath
