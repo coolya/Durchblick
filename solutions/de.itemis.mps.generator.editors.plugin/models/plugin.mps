@@ -2,8 +2,8 @@
 <model ref="r:61d1f4a8-8294-4a38-8baf-c9c6b810f788(de.itemis.mps.generator.editors.plugin.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -52,9 +52,6 @@
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -169,7 +166,6 @@
     <node concept="2tJIrI" id="5_O4MwJJkAH" role="jymVt" />
     <node concept="3clFbW" id="~ToggleAction.&lt;init&gt;(java.lang.String)" role="jymVt">
       <property role="TrG5h" value="ToggleAction" />
-      <property role="IEkAT" value="false" />
       <node concept="3cqZAl" id="3C$MSDkynis" role="3clF45" />
       <node concept="3Tm1VV" id="3C$MSDkynhG" role="1B3o_S" />
       <node concept="37vLTG" id="3C$MSDkynhL" role="3clF46">
@@ -193,7 +189,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="isSelected" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="3C$MSDkzklI" role="1B3o_S" />
       <node concept="10P_77" id="3C$MSDkzklK" role="3clF45" />
       <node concept="37vLTG" id="3C$MSDkzklL" role="3clF46">
@@ -215,7 +210,7 @@
                 <ref role="3cqZAo" node="3C$MSDkzklL" resolve="event" />
               </node>
               <node concept="liA8E" id="3C$MSDk$eH9" role="2OqNvi">
-                <ref role="37wK5l" to="qkt:~AnActionEvent.getData(com.intellij.openapi.actionSystem.DataKey):java.lang.Object" resolve="getData" />
+                <ref role="37wK5l" to="qkt:~AnActionEvent.getData(com.intellij.openapi.actionSystem.DataKey)" resolve="getData" />
                 <node concept="10M0yZ" id="3C$MSDk$eHa" role="37wK5m">
                   <ref role="1PxDUh" to="qkt:~CommonDataKeys" resolve="CommonDataKeys" />
                   <ref role="3cqZAo" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -231,7 +226,7 @@
               <ref role="3uigEE" to="zwau:~ConceptEditorHintSettingsComponent" resolve="ConceptEditorHintSettingsComponent" />
             </node>
             <node concept="2YIFZM" id="3C$MSDk$eHf" role="33vP2m">
-              <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.getInstance(com.intellij.openapi.project.Project):jetbrains.mps.nodeEditor.hintsSettings.ConceptEditorHintSettingsComponent" resolve="getInstance" />
+              <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
               <ref role="1Pybhc" to="zwau:~ConceptEditorHintSettingsComponent" resolve="ConceptEditorHintSettingsComponent" />
               <node concept="37vLTw" id="3C$MSDk$eHg" role="37wK5m">
                 <ref role="3cqZAo" node="3C$MSDk$eH5" resolve="project" />
@@ -247,15 +242,15 @@
                   <ref role="3cqZAo" node="3C$MSDk$eHd" resolve="settingsInstance" />
                 </node>
                 <node concept="liA8E" id="3C$MSDk$g0u" role="2OqNvi">
-                  <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.getState():jetbrains.mps.nodeEditor.hintsSettings.ConceptEditorHintSettingsComponent$HintsState" resolve="getState" />
+                  <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.getState()" resolve="getState" />
                 </node>
               </node>
               <node concept="liA8E" id="3C$MSDk$gAH" role="2OqNvi">
-                <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent$HintsState.getEnabledHints():java.util.Set" resolve="getEnabledHints" />
+                <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent$HintsState.getEnabledHints()" resolve="getEnabledHints" />
               </node>
             </node>
             <node concept="liA8E" id="3C$MSDk$k4t" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Set.contains(java.lang.Object):boolean" resolve="contains" />
+              <ref role="37wK5l" to="33ny:~Set.contains(java.lang.Object)" resolve="contains" />
               <node concept="2pYGij" id="fPAH2n46wi" role="37wK5m">
                 <ref role="2pYH_C" to="pmtf:5874YVFmnHk" resolve="inlineSimpleQueries" />
               </node>
@@ -269,7 +264,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="setSelected" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="3C$MSDkzklR" role="1B3o_S" />
       <node concept="3cqZAl" id="3C$MSDkzklT" role="3clF45" />
       <node concept="37vLTG" id="3C$MSDkzklU" role="3clF46">
@@ -295,7 +289,7 @@
                 <ref role="3cqZAo" node="3C$MSDkzklU" resolve="event" />
               </node>
               <node concept="liA8E" id="3C$MSDk$deI" role="2OqNvi">
-                <ref role="37wK5l" to="qkt:~AnActionEvent.getData(com.intellij.openapi.actionSystem.DataKey):java.lang.Object" resolve="getData" />
+                <ref role="37wK5l" to="qkt:~AnActionEvent.getData(com.intellij.openapi.actionSystem.DataKey)" resolve="getData" />
                 <node concept="10M0yZ" id="3C$MSDk$deJ" role="37wK5m">
                   <ref role="1PxDUh" to="qkt:~CommonDataKeys" resolve="CommonDataKeys" />
                   <ref role="3cqZAo" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -312,7 +306,7 @@
             </node>
             <node concept="2YIFZM" id="3C$MSDk$3DS" role="33vP2m">
               <ref role="1Pybhc" to="zwau:~ConceptEditorHintSettingsComponent" resolve="ConceptEditorHintSettingsComponent" />
-              <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.getInstance(com.intellij.openapi.project.Project):jetbrains.mps.nodeEditor.hintsSettings.ConceptEditorHintSettingsComponent" resolve="getInstance" />
+              <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
               <node concept="37vLTw" id="3C$MSDk$deK" role="37wK5m">
                 <ref role="3cqZAo" node="3C$MSDk$deF" resolve="project" />
               </node>
@@ -333,11 +327,11 @@
                   <ref role="3cqZAo" node="3C$MSDk$3DR" resolve="settingsInstance" />
                 </node>
                 <node concept="liA8E" id="3C$MSDk$poC" role="2OqNvi">
-                  <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.getState():jetbrains.mps.nodeEditor.hintsSettings.ConceptEditorHintSettingsComponent$HintsState" resolve="getState" />
+                  <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.getState()" resolve="getState" />
                 </node>
               </node>
               <node concept="liA8E" id="3C$MSDk$poD" role="2OqNvi">
-                <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent$HintsState.getEnabledHints():java.util.Set" resolve="getEnabledHints" />
+                <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent$HintsState.getEnabledHints()" resolve="getEnabledHints" />
               </node>
             </node>
           </node>
@@ -350,7 +344,7 @@
                   <ref role="3cqZAo" node="3C$MSDk$po$" resolve="enabledHints" />
                 </node>
                 <node concept="liA8E" id="3C$MSDk$vje" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
+                  <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object)" resolve="add" />
                   <node concept="2pYGij" id="fPAH2n44Rz" role="37wK5m">
                     <ref role="2pYH_C" to="pmtf:5874YVFmnHk" resolve="inlineSimpleQueries" />
                   </node>
@@ -369,7 +363,7 @@
                     <ref role="3cqZAo" node="3C$MSDk$po$" resolve="enabledHints" />
                   </node>
                   <node concept="liA8E" id="3C$MSDk$yBt" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~Set.remove(java.lang.Object):boolean" resolve="remove" />
+                    <ref role="37wK5l" to="33ny:~Set.remove(java.lang.Object)" resolve="remove" />
                     <node concept="2pYGij" id="fPAH2n462u" role="37wK5m">
                       <ref role="2pYH_C" to="pmtf:5874YVFmnHk" resolve="inlineSimpleQueries" />
                     </node>
@@ -400,7 +394,7 @@
               <ref role="3cqZAo" node="3C$MSDkznnI" resolve="newState" />
             </node>
             <node concept="liA8E" id="3C$MSDkznon" role="2OqNvi">
-              <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent$HintsState.setEnabledHints(java.util.Set):void" resolve="setEnabledHints" />
+              <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent$HintsState.setEnabledHints(java.util.Set)" resolve="setEnabledHints" />
               <node concept="37vLTw" id="3C$MSDk$poE" role="37wK5m">
                 <ref role="3cqZAo" node="3C$MSDk$po$" resolve="enabledHints" />
               </node>
@@ -413,7 +407,7 @@
               <ref role="3cqZAo" node="3C$MSDk$3DR" resolve="settingsInstance" />
             </node>
             <node concept="liA8E" id="3C$MSDkznnT" role="2OqNvi">
-              <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.loadState(jetbrains.mps.nodeEditor.hintsSettings.ConceptEditorHintSettingsComponent$HintsState):void" resolve="loadState" />
+              <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.loadState(jetbrains.mps.nodeEditor.hintsSettings.ConceptEditorHintSettingsComponent$HintsState)" resolve="loadState" />
               <node concept="37vLTw" id="3C$MSDkznnU" role="37wK5m">
                 <ref role="3cqZAo" node="3C$MSDkznnI" resolve="newState" />
               </node>
@@ -424,10 +418,10 @@
           <node concept="2OqwBi" id="3C$MSDkztgW" role="3clFbG">
             <node concept="2YIFZM" id="3C$MSDkzt9n" role="2Oq$k0">
               <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
-              <ref role="37wK5l" to="w1kc:~ModelAccess.instance():jetbrains.mps.smodel.ModelAccess" resolve="instance" />
+              <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
             </node>
             <node concept="liA8E" id="3C$MSDkztWZ" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runReadAction(java.lang.Runnable):void" resolve="runReadAction" />
+              <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
               <node concept="2ShNRf" id="3C$MSDkzu0o" role="37wK5m">
                 <node concept="YeOm9" id="3C$MSDkzBrM" role="2ShVmc">
                   <node concept="1Y3b0j" id="3C$MSDkzBrP" role="YeSDq">
@@ -439,7 +433,6 @@
                       <property role="1EzhhJ" value="false" />
                       <property role="TrG5h" value="run" />
                       <property role="DiZV1" value="false" />
-                      <property role="IEkAT" value="false" />
                       <node concept="3Tm1VV" id="3C$MSDkzBrS" role="1B3o_S" />
                       <node concept="3cqZAl" id="3C$MSDkzBrU" role="3clF45" />
                       <node concept="3clFbS" id="3C$MSDkzBrV" role="3clF47">
@@ -449,7 +442,7 @@
                             <ref role="1Pybhc" to="7lvn:3TltS6fENti" resolve="EditorComponentUtil" />
                             <node concept="2YIFZM" id="3C$MSDk$2oV" role="37wK5m">
                               <ref role="1Pybhc" to="iwsx:~FileEditorManager" resolve="FileEditorManager" />
-                              <ref role="37wK5l" to="iwsx:~FileEditorManager.getInstance(com.intellij.openapi.project.Project):com.intellij.openapi.fileEditor.FileEditorManager" resolve="getInstance" />
+                              <ref role="37wK5l" to="iwsx:~FileEditorManager.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
                               <node concept="37vLTw" id="3C$MSDk$d$I" role="37wK5m">
                                 <ref role="3cqZAo" node="3C$MSDk$deF" resolve="project" />
                               </node>
@@ -472,7 +465,7 @@
                                   <ref role="3cqZAo" node="3C$MSDkznob" resolve="component" />
                                 </node>
                                 <node concept="liA8E" id="3C$MSDkznDQ" role="2OqNvi">
-                                  <ref role="37wK5l" to="exr9:~EditorComponent.rebuildEditorContent():void" resolve="rebuildEditorContent" />
+                                  <ref role="37wK5l" to="exr9:~EditorComponent.rebuildEditorContent()" resolve="rebuildEditorContent" />
                                 </node>
                               </node>
                             </node>
@@ -504,7 +497,7 @@
           <node concept="2OqwBi" id="fPAH2n4dNj" role="3clFbG">
             <node concept="2WthIp" id="fPAH2n4d9d" role="2Oq$k0" />
             <node concept="liA8E" id="fPAH2n4efM" role="2OqNvi">
-              <ref role="37wK5l" to="qkt:~DefaultActionGroup.add(com.intellij.openapi.actionSystem.AnAction):void" resolve="add" />
+              <ref role="37wK5l" to="qkt:~DefaultActionGroup.add(com.intellij.openapi.actionSystem.AnAction)" resolve="add" />
               <node concept="2ShNRf" id="fPAH2n4eqA" role="37wK5m">
                 <node concept="1pGfFk" id="fPAH2n4tsf" role="2ShVmc">
                   <ref role="37wK5l" node="~ToggleAction.&lt;init&gt;(java.lang.String)" resolve="ToggleHint" />
