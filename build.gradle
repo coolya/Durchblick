@@ -117,4 +117,4 @@ github {
 }
 
 build.dependsOn build_languages
-//githubRelease.dependsOn build
+githubRelease.dependsOn build
