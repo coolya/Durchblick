@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:a650770d-512c-4713-b54a-50c3961c80ca(de.itemis.mps.generartor.editors.build.all)">
+<model ref="r:a650770d-512c-4713-b54a-50c3961c80ca(ws.logv.mps.generartor.editors.build.all)">
   <persistence version="9" />
   <languages>
     <use id="427a473d-5177-432c-9905-bcbceb71b996" name="jetbrains.mps.build.mps.runner" version="0" />
@@ -120,17 +120,17 @@
     <node concept="55IIr" id="fPAH2mYvQk" role="auvoZ" />
     <node concept="1l3spV" id="fPAH2mYvQl" role="1l3spN">
       <node concept="m$_wl" id="fPAH2mYzrb" role="39821P">
-        <ref role="m_rDy" node="fPAH2mYzoT" resolve="de.itemis.mps.generator.editors" />
+        <ref role="m_rDy" node="fPAH2mYzoT" resolve="ws.logv.mps.generator.editors" />
         <node concept="pUk6x" id="4MACRVwt9d_" role="pUk7w" />
       </node>
       <node concept="3981dG" id="fPAH2n4$SA" role="39821P">
         <node concept="m$_wl" id="fPAH2n4$SV" role="39821P">
-          <ref role="m_rDy" node="fPAH2mYzoT" resolve="de.itemis.mps.generator.editors" />
+          <ref role="m_rDy" node="fPAH2mYzoT" resolve="ws.logv.mps.generator.editors" />
           <node concept="pUk6x" id="4MACRVwt9dA" role="pUk7w" />
         </node>
         <node concept="3_J27D" id="fPAH2n4$SC" role="Nbhlr">
           <node concept="3Mxwew" id="fPAH2n4$SS" role="3MwsjC">
-            <property role="3MwjfP" value="de.itemis.mps.generator.editors-" />
+            <property role="3MwjfP" value="ws.logv.mps.generator.editors-" />
           </node>
           <node concept="3Mxwey" id="fPAH2n4DIG" role="3MwsjC">
             <ref role="3Mxwex" node="fPAH2mYzqe" resolve="version" />
@@ -184,16 +184,16 @@
     </node>
     <node concept="1E1JtA" id="fPAH2n4$Ps" role="3989C9">
       <property role="BnDLt" value="true" />
-      <property role="TrG5h" value="de.itemis.mps.generator.editors.plugin" />
+      <property role="TrG5h" value="ws.logv.mps.generator.editors.plugin" />
       <property role="3LESm3" value="734c0a0d-4e8a-4058-8b0b-5fce781b4887" />
       <node concept="398BVA" id="fPAH2n4$Qf" role="3LF7KH">
         <ref role="398BVh" node="fPAH2mYvZe" resolve="home" />
         <node concept="2Ry0Ak" id="fPAH2n4$Qv" role="iGT6I">
           <property role="2Ry0Am" value="solutions" />
           <node concept="2Ry0Ak" id="fPAH2n4$QI" role="2Ry0An">
-            <property role="2Ry0Am" value="de.itemis.mps.generator.editors.plugin" />
-            <node concept="2Ry0Ak" id="fPAH2n4$QX" role="2Ry0An">
-              <property role="2Ry0Am" value="de.itemis.mps.generator.editors.plugin.msd" />
+            <property role="2Ry0Am" value="ws.logv.mps.generator.editors.plugin" />
+            <node concept="2Ry0Ak" id="7u2ip99OYx7" role="2Ry0An">
+              <property role="2Ry0Am" value="ws.logv.mps.generator.editors.plugin.msd" />
             </node>
           </node>
         </node>
@@ -230,22 +230,22 @@
       </node>
       <node concept="1SiIV0" id="fPAH2n4$Rg" role="3bR37C">
         <node concept="3bR9La" id="fPAH2n4$Rh" role="1SiIV1">
-          <ref role="3bR37D" node="fPAH2mYvZ2" resolve="de.itemis.mps.generator.editors" />
+          <ref role="3bR37D" node="fPAH2mYvZ2" resolve="ws.logv.mps.generator.editors" />
         </node>
       </node>
     </node>
     <node concept="1E1JtD" id="fPAH2mYvZ2" role="3989C9">
       <property role="BnDLt" value="true" />
-      <property role="TrG5h" value="de.itemis.mps.generator.editors" />
+      <property role="TrG5h" value="ws.logv.mps.generator.editors" />
       <property role="3LESm3" value="1efe7888-a4e7-4af3-9dab-f5bcc36b0199" />
       <node concept="398BVA" id="fPAH2mYvZv" role="3LF7KH">
         <ref role="398BVh" node="fPAH2mYvZe" resolve="home" />
         <node concept="2Ry0Ak" id="fPAH2mYvZ_" role="iGT6I">
           <property role="2Ry0Am" value="languages" />
           <node concept="2Ry0Ak" id="fPAH2mYvZE" role="2Ry0An">
-            <property role="2Ry0Am" value="de.itemis.mps.generator.editors" />
-            <node concept="2Ry0Ak" id="fPAH2mYvZJ" role="2Ry0An">
-              <property role="2Ry0Am" value="de.itemis.mps.generator.editors.mpl" />
+            <property role="2Ry0Am" value="ws.logv.mps.generator.editors" />
+            <node concept="2Ry0Ak" id="7u2ip99OYx5" role="2Ry0An">
+              <property role="2Ry0Am" value="ws.logv.mps.generator.editors.mpl" />
             </node>
           </node>
         </node>
@@ -267,7 +267,7 @@
       </node>
     </node>
     <node concept="m$_wf" id="fPAH2mYzoT" role="3989C9">
-      <property role="m$_wk" value="de.itemis.mps.generator.editors" />
+      <property role="m$_wk" value="ws.logv.mps.generator.editors" />
       <node concept="3_J27D" id="fPAH2mYzoV" role="m$_yQ">
         <node concept="3Mxwew" id="fPAH2mYzpK" role="3MwsjC">
           <property role="3MwjfP" value="Simplified MPS Generator editors" />
@@ -275,7 +275,7 @@
       </node>
       <node concept="3_J27D" id="fPAH2mYzoX" role="m_cZH">
         <node concept="3Mxwew" id="fPAH2mYzpM" role="3MwsjC">
-          <property role="3MwjfP" value="de.itemis.mps.generator.editors" />
+          <property role="3MwjfP" value="simple-generator-editors" />
         </node>
       </node>
       <node concept="3_J27D" id="fPAH2mYzoZ" role="m$_w8">
@@ -284,10 +284,10 @@
         </node>
       </node>
       <node concept="m$_yB" id="fPAH2mYzqZ" role="m$_yh">
-        <ref role="m$_yA" node="fPAH2mYvZ2" resolve="de.itemis.mps.generator.editors" />
+        <ref role="m$_yA" node="fPAH2mYvZ2" resolve="ws.logv.mps.generator.editors" />
       </node>
       <node concept="m$_yB" id="fPAH2n4$Sb" role="m$_yh">
-        <ref role="m$_yA" node="fPAH2n4$Ps" resolve="de.itemis.mps.generator.editors.plugin" />
+        <ref role="m$_yA" node="fPAH2n4$Ps" resolve="ws.logv.mps.generator.editors.plugin" />
       </node>
       <node concept="m$_yC" id="4MACRVwuJER" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />

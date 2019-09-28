@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:29e3785c-bfe3-4352-ae01-94f88fec9f9a(de.itemis.mps.generators.editors.build.meta.all)" content="root">
+<model ref="r:29e3785c-bfe3-4352-ae01-94f88fec9f9a(ws.logv.mps.generators.editors.build.meta.all)" content="root">
   <persistence version="9" />
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" implicit="true" />
@@ -114,16 +114,16 @@
     <node concept="3b7kt6" id="fPAH2mY_lZ" role="10PD9s" />
     <node concept="1E1JtA" id="fPAH2mY_mh" role="3989C9">
       <property role="BnDLt" value="true" />
-      <property role="TrG5h" value="de.itemis.mps.generartor.editors.build" />
+      <property role="TrG5h" value="ws.logv.mps.generartor.editors.build" />
       <property role="3LESm3" value="26daab36-d3ae-44a6-947f-483b321828c7" />
       <node concept="398BVA" id="fPAH2mY_ml" role="3LF7KH">
         <ref role="398BVh" node="fPAH2mYvZe" resolve="home" />
         <node concept="2Ry0Ak" id="fPAH2mY_mr" role="iGT6I">
           <property role="2Ry0Am" value="solutions" />
           <node concept="2Ry0Ak" id="fPAH2mY_mw" role="2Ry0An">
-            <property role="2Ry0Am" value="de.itemis.mps.generartor.editors.build" />
-            <node concept="2Ry0Ak" id="fPAH2mY_m_" role="2Ry0An">
-              <property role="2Ry0Am" value="de.itemis.mps.generartor.editors.build.msd" />
+            <property role="2Ry0Am" value="ws.logv.mps.generartor.editors.build" />
+            <node concept="2Ry0Ak" id="6ftRp$XaB$q" role="2Ry0An">
+              <property role="2Ry0Am" value="ws.logv.mps.generartor.editors.build.msd" />
             </node>
           </node>
         </node>
