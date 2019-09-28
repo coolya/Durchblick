@@ -4,7 +4,7 @@
   <languages>
     <use id="427a473d-5177-432c-9905-bcbceb71b996" name="jetbrains.mps.build.mps.runner" version="0" />
     <use id="698a8d22-a104-47a0-ba8d-10e3ec237f13" name="jetbrains.mps.build.workflow" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
   </languages>
   <imports>
@@ -86,6 +86,7 @@
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
+        <child id="3570488090019868128" name="packagingType" index="pUk7w" />
       </concept>
       <concept id="6592112598314499036" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginModule" flags="ng" index="m$_yB">
         <reference id="6592112598314499037" name="target" index="m$_yA" />
@@ -93,6 +94,7 @@
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
+      <concept id="3570488090019868065" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_AutoPluginLayoutType" flags="ng" index="pUk6x" />
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
         <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
@@ -125,10 +127,12 @@
     <node concept="1l3spV" id="fPAH2mYvQl" role="1l3spN">
       <node concept="m$_wl" id="fPAH2mYzrb" role="39821P">
         <ref role="m_rDy" node="fPAH2mYzoT" resolve="de.itemis.mps.generator.editors" />
+        <node concept="pUk6x" id="4MACRVwt9d_" role="pUk7w" />
       </node>
       <node concept="3981dG" id="fPAH2n4$SA" role="39821P">
         <node concept="m$_wl" id="fPAH2n4$SV" role="39821P">
           <ref role="m_rDy" node="fPAH2mYzoT" resolve="de.itemis.mps.generator.editors" />
+          <node concept="pUk6x" id="4MACRVwt9dA" role="pUk7w" />
         </node>
         <node concept="3_J27D" id="fPAH2n4$SC" role="Nbhlr">
           <node concept="3Mxwew" id="fPAH2n4$SS" role="3MwsjC">
@@ -154,6 +158,7 @@
         </node>
         <node concept="m$_wl" id="fPAH2n4$T7" role="39821P">
           <ref role="m_rDy" node="fPAH2mYzoT" resolve="de.itemis.mps.generator.editors" />
+          <node concept="pUk6x" id="4MACRVwt9dB" role="pUk7w" />
         </node>
         <node concept="3_J27D" id="fPAH2n4$T8" role="Nbhlr">
           <node concept="3Mxwew" id="fPAH2n4$T9" role="3MwsjC">
