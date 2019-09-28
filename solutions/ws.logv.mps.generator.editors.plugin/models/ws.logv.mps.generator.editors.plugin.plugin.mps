@@ -19,6 +19,9 @@
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="pmtf" ref="r:f7936663-dbe5-4690-bf1f-845021925960(de.itemis.mps.generator.editors.editor)" />
+    <import index="btn2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.impl(MPS.IDEA/)" />
+    <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
@@ -79,6 +82,7 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <child id="1165602531693" name="superclass" index="1zkMxy" />
@@ -138,6 +142,11 @@
         <reference id="1107535924139" name="classifier" index="3uigEE" />
         <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -154,6 +163,12 @@
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -414,58 +429,73 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3C$MSDkzsPa" role="3cqZAp">
-          <node concept="2OqwBi" id="3C$MSDkztgW" role="3clFbG">
-            <node concept="2YIFZM" id="3C$MSDkzt9n" role="2Oq$k0">
-              <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
-              <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
+        <node concept="3cpWs8" id="6ftRp$XbRjt" role="3cqZAp">
+          <node concept="3cpWsn" id="6ftRp$XbRju" role="3cpWs9">
+            <property role="TrG5h" value="modelAccess" />
+            <node concept="3uibUv" id="6ftRp$XbPZK" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~ModelAccess" resolve="ModelAccess" />
             </node>
-            <node concept="liA8E" id="3C$MSDkztWZ" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
-              <node concept="2ShNRf" id="3C$MSDkzu0o" role="37wK5m">
-                <node concept="YeOm9" id="3C$MSDkzBrM" role="2ShVmc">
-                  <node concept="1Y3b0j" id="3C$MSDkzBrP" role="YeSDq">
-                    <property role="2bfB8j" value="true" />
-                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                    <ref role="1Y3XeK" to="wyt6:~Runnable" resolve="Runnable" />
-                    <node concept="3Tm1VV" id="3C$MSDkzBrQ" role="1B3o_S" />
-                    <node concept="3clFb_" id="3C$MSDkzBrR" role="jymVt">
-                      <property role="1EzhhJ" value="false" />
-                      <property role="TrG5h" value="run" />
-                      <property role="DiZV1" value="false" />
-                      <node concept="3Tm1VV" id="3C$MSDkzBrS" role="1B3o_S" />
-                      <node concept="3cqZAl" id="3C$MSDkzBrU" role="3clF45" />
-                      <node concept="3clFbS" id="3C$MSDkzBrV" role="3clF47">
-                        <node concept="1DcWWT" id="3C$MSDkzno6" role="3cqZAp">
-                          <node concept="2YIFZM" id="3C$MSDkzE3e" role="1DdaDG">
-                            <ref role="37wK5l" to="7lvn:3TltS6fENwY" resolve="getAllEditorComponents" />
-                            <ref role="1Pybhc" to="7lvn:3TltS6fENti" resolve="EditorComponentUtil" />
-                            <node concept="2YIFZM" id="3C$MSDk$2oV" role="37wK5m">
-                              <ref role="1Pybhc" to="iwsx:~FileEditorManager" resolve="FileEditorManager" />
-                              <ref role="37wK5l" to="iwsx:~FileEditorManager.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
-                              <node concept="37vLTw" id="3C$MSDk$d$I" role="37wK5m">
-                                <ref role="3cqZAo" node="3C$MSDk$deF" resolve="project" />
-                              </node>
-                            </node>
-                            <node concept="3clFbT" id="3C$MSDkzE3j" role="37wK5m">
-                              <property role="3clFbU" value="true" />
-                            </node>
-                          </node>
-                          <node concept="3cpWsn" id="3C$MSDkznob" role="1Duv9x">
-                            <property role="3TUv4t" value="false" />
-                            <property role="TrG5h" value="component" />
-                            <node concept="3uibUv" id="3C$MSDk$24B" role="1tU5fm">
-                              <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
-                            </node>
-                          </node>
-                          <node concept="3clFbS" id="3C$MSDkzno8" role="2LFqv$">
-                            <node concept="3clFbF" id="3C$MSDkzno9" role="3cqZAp">
-                              <node concept="2OqwBi" id="3C$MSDkznDP" role="3clFbG">
-                                <node concept="37vLTw" id="3C$MSDkznDO" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="3C$MSDkznob" resolve="component" />
+            <node concept="2YIFZM" id="6ftRp$XbRjv" role="33vP2m">
+              <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+              <ref role="37wK5l" to="alof:~ProjectHelper.getModelAccess(com.intellij.openapi.project.Project)" resolve="getModelAccess" />
+              <node concept="37vLTw" id="6ftRp$XbRjw" role="37wK5m">
+                <ref role="3cqZAo" node="3C$MSDk$deF" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6ftRp$XbTaK" role="3cqZAp">
+          <node concept="3clFbS" id="6ftRp$XbTaM" role="3clFbx">
+            <node concept="3clFbF" id="3C$MSDkzsPa" role="3cqZAp">
+              <node concept="2OqwBi" id="3C$MSDkztgW" role="3clFbG">
+                <node concept="liA8E" id="3C$MSDkztWZ" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="2ShNRf" id="3C$MSDkzu0o" role="37wK5m">
+                    <node concept="YeOm9" id="3C$MSDkzBrM" role="2ShVmc">
+                      <node concept="1Y3b0j" id="3C$MSDkzBrP" role="YeSDq">
+                        <property role="2bfB8j" value="true" />
+                        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                        <ref role="1Y3XeK" to="wyt6:~Runnable" resolve="Runnable" />
+                        <node concept="3Tm1VV" id="3C$MSDkzBrQ" role="1B3o_S" />
+                        <node concept="3clFb_" id="3C$MSDkzBrR" role="jymVt">
+                          <property role="1EzhhJ" value="false" />
+                          <property role="TrG5h" value="run" />
+                          <property role="DiZV1" value="false" />
+                          <node concept="3Tm1VV" id="3C$MSDkzBrS" role="1B3o_S" />
+                          <node concept="3cqZAl" id="3C$MSDkzBrU" role="3clF45" />
+                          <node concept="3clFbS" id="3C$MSDkzBrV" role="3clF47">
+                            <node concept="1DcWWT" id="3C$MSDkzno6" role="3cqZAp">
+                              <node concept="2YIFZM" id="3C$MSDkzE3e" role="1DdaDG">
+                                <ref role="37wK5l" to="7lvn:3TltS6fENwY" resolve="getAllEditorComponents" />
+                                <ref role="1Pybhc" to="7lvn:3TltS6fENti" resolve="EditorComponentUtil" />
+                                <node concept="2YIFZM" id="3C$MSDk$2oV" role="37wK5m">
+                                  <ref role="1Pybhc" to="iwsx:~FileEditorManager" resolve="FileEditorManager" />
+                                  <ref role="37wK5l" to="iwsx:~FileEditorManager.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
+                                  <node concept="37vLTw" id="3C$MSDk$d$I" role="37wK5m">
+                                    <ref role="3cqZAo" node="3C$MSDk$deF" resolve="project" />
+                                  </node>
                                 </node>
-                                <node concept="liA8E" id="3C$MSDkznDQ" role="2OqNvi">
-                                  <ref role="37wK5l" to="exr9:~EditorComponent.rebuildEditorContent()" resolve="rebuildEditorContent" />
+                                <node concept="3clFbT" id="3C$MSDkzE3j" role="37wK5m">
+                                  <property role="3clFbU" value="true" />
+                                </node>
+                              </node>
+                              <node concept="3cpWsn" id="3C$MSDkznob" role="1Duv9x">
+                                <property role="3TUv4t" value="false" />
+                                <property role="TrG5h" value="component" />
+                                <node concept="3uibUv" id="3C$MSDk$24B" role="1tU5fm">
+                                  <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+                                </node>
+                              </node>
+                              <node concept="3clFbS" id="3C$MSDkzno8" role="2LFqv$">
+                                <node concept="3clFbF" id="3C$MSDkzno9" role="3cqZAp">
+                                  <node concept="2OqwBi" id="3C$MSDkznDP" role="3clFbG">
+                                    <node concept="37vLTw" id="3C$MSDkznDO" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="3C$MSDkznob" resolve="component" />
+                                    </node>
+                                    <node concept="liA8E" id="3C$MSDkznDQ" role="2OqNvi">
+                                      <ref role="37wK5l" to="exr9:~EditorComponent.rebuildEditorContent()" resolve="rebuildEditorContent" />
+                                    </node>
+                                  </node>
                                 </node>
                               </node>
                             </node>
@@ -474,6 +504,25 @@
                       </node>
                     </node>
                   </node>
+                </node>
+                <node concept="37vLTw" id="6ftRp$XbRjx" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6ftRp$XbRju" resolve="modelAccess" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="6ftRp$XbUeQ" role="3clFbw">
+            <node concept="10Nm6u" id="6ftRp$XbUff" role="3uHU7w" />
+            <node concept="37vLTw" id="6ftRp$XbTVz" role="3uHU7B">
+              <ref role="3cqZAo" node="6ftRp$XbRju" resolve="modelAccess" />
+            </node>
+          </node>
+          <node concept="9aQIb" id="6ftRp$XbVrQ" role="9aQIa">
+            <node concept="3clFbS" id="6ftRp$XbVrR" role="9aQI4">
+              <node concept="RRSsy" id="6ftRp$XbVJ6" role="3cqZAp">
+                <property role="RRSoG" value="gZ5fh_4/error" />
+                <node concept="Xl_RD" id="6ftRp$XbVJ8" role="RRSoy">
+                  <property role="Xl_RC" value="can't get model access for project" />
                 </node>
               </node>
             </node>
