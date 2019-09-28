@@ -16,8 +16,8 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
-    - name: Build with Gradle
+    - name: release to github with gradle
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         CI_COMMIT_SHA: $GITHUB_SHA
-      run: ./gradlew build
+      run: ./gradlew githubRelease
