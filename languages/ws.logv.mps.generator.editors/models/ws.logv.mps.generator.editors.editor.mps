@@ -318,26 +318,24 @@
     <property role="3GE5qa" value="styles" />
     <node concept="14StLt" id="5874YVFljmC" role="V601i">
       <property role="TrG5h" value="editableQuery" />
-      <node concept="Veino" id="6ftRp$XcFhS" role="3F10Kt">
-        <property role="Vb096" value="hGRnIZc/lightBlue" />
-        <node concept="1iSF2X" id="6ftRp$XcFhT" role="VblUZ">
+      <node concept="Veino" id="7irqVrPvfOP" role="3F10Kt">
+        <node concept="1iSF2X" id="7irqVrPvfOU" role="VblUZ">
           <property role="1iTho6" value="E6FFFE" />
         </node>
       </node>
     </node>
     <node concept="14StLt" id="5874YVFmClp" role="V601i">
       <property role="TrG5h" value="macroCtx" />
-      <node concept="Veino" id="5874YVFljmL" role="3F10Kt">
-        <property role="Vb096" value="hGRnIZc/lightBlue" />
-        <node concept="1iSF2X" id="6ftRp$XcyNW" role="VblUZ">
+      <node concept="Veino" id="7irqVrPvfP2" role="3F10Kt">
+        <node concept="1iSF2X" id="7irqVrPvfP7" role="VblUZ">
           <property role="1iTho6" value="E6FFFE" />
         </node>
       </node>
     </node>
     <node concept="14StLt" id="6ftRp$XcWec" role="V601i">
       <property role="TrG5h" value="macroText" />
-      <node concept="VechU" id="6ftRp$XcWed" role="3F10Kt">
-        <property role="Vb096" value="g1_qVrt/darkMagenta" />
+      <node concept="VechU" id="7irqVrPvfPg" role="3F10Kt">
+        <property role="Vb096" value="DARK_MAGENTA" />
       </node>
       <node concept="3Xmtl4" id="6ftRp$Xfdmt" role="3F10Kt">
         <node concept="1wgc9g" id="6ftRp$Xfdm$" role="3XvnJa">
@@ -367,16 +365,16 @@
     <node concept="14StLt" id="5874YVFnS$5" role="V601i">
       <property role="TrG5h" value="consequence" />
       <node concept="30gYXW" id="hF0kJRq" role="3F10Kt">
-        <property role="Vb096" value="fLwANPo/pink" />
+        <property role="Vb096" value="pink" />
       </node>
       <node concept="30h1P$" id="hF0kJUT" role="3F10Kt">
-        <property role="Vb096" value="fLwANPs/magenta" />
+        <property role="Vb096" value="magenta" />
       </node>
     </node>
     <node concept="14StLt" id="6ftRp$Xc23k" role="V601i">
       <property role="TrG5h" value="macroBraket" />
       <node concept="VechU" id="6ftRp$Xc22t" role="3F10Kt">
-        <property role="Vb096" value="g1_qVrt/darkMagenta" />
+        <property role="Vb096" value="DARK_MAGENTA" />
       </node>
     </node>
     <node concept="14StLt" id="6ftRp$Xc22c" role="V601i">
@@ -565,7 +563,7 @@
         <ref role="1k5W1q" node="5874YVFmClp" resolve="macroCtx" />
         <node concept="3F0ifn" id="4MACRVwt1Vp" role="3EZMnx">
           <property role="3F0ifm" value="$COPY_SRCL$" />
-          <property role="1cu_pB" value="gtgu$YJ/attractsFocus" />
+          <property role="1cu_pB" value="1" />
           <ref role="1k5W1q" to="tpfj:hG2hEjs" resolve="macroStart" />
           <ref role="1ERwB7" to="tpfj:gZDQqLq" resolve="MacroSymbol_Actions" />
           <node concept="OXEIz" id="4MACRVwt1Vq" role="P5bDN">
@@ -633,7 +631,7 @@
         <ref role="1k5W1q" node="5874YVFmClp" resolve="macroCtx" />
         <node concept="3F0ifn" id="4MACRVwt2t9" role="3EZMnx">
           <property role="3F0ifm" value="$COPY_SRC$" />
-          <property role="1cu_pB" value="gtgu$YJ/attractsFocus" />
+          <property role="1cu_pB" value="1" />
           <ref role="1ERwB7" to="tpfj:gZDQqLq" resolve="MacroSymbol_Actions" />
           <ref role="1k5W1q" to="tpfj:hG2hEjs" resolve="macroStart" />
           <node concept="OXEIz" id="4MACRVwt2ta" role="P5bDN">
@@ -779,7 +777,7 @@
             <property role="VOm3f" value="true" />
           </node>
           <node concept="VLuvy" id="6ftRp$Xe0YT" role="3F10Kt">
-            <property role="Vb096" value="fLwANPo/pink" />
+            <property role="Vb096" value="pink" />
           </node>
         </node>
         <node concept="3EZMnI" id="5874YVFnAWC" role="3EZMnx">
@@ -844,7 +842,7 @@
             <property role="VOm3f" value="true" />
           </node>
           <node concept="VLuvy" id="6ftRp$XdKjg" role="3F10Kt">
-            <property role="Vb096" value="fLwANPo/pink" />
+            <property role="Vb096" value="pink" />
           </node>
         </node>
         <node concept="l2Vlx" id="6ftRp$Xc1O1" role="2iSdaV" />
@@ -885,7 +883,7 @@
           <ref role="1k5W1q" node="5874YVFmClp" resolve="macroCtx" />
           <node concept="VPM3Z" id="6ftRp$Xfm08" role="3F10Kt" />
           <node concept="3F0ifn" id="gITmPOY" role="3EZMnx">
-            <property role="1cu_pB" value="gtgu$YJ/attractsFocus" />
+            <property role="1cu_pB" value="0" />
             <property role="3F0ifm" value="[" />
             <ref role="1k5W1q" node="6ftRp$Xc22c" resolve="leftMacroBraket" />
             <ref role="1ERwB7" to="tpfj:gZDQqLq" resolve="MacroSymbol_Actions" />
@@ -945,7 +943,7 @@
             <property role="VOm3f" value="true" />
           </node>
           <node concept="VLuvy" id="6ftRp$XezCI" role="3F10Kt">
-            <property role="Vb096" value="fLwANPo/pink" />
+            <property role="Vb096" value="pink" />
           </node>
           <node concept="3XB9Gl" id="6ftRp$XeOGz" role="3F10Kt">
             <node concept="1wgc9g" id="6ftRp$XeOGH" role="3XB9FH">
@@ -1161,7 +1159,7 @@
       <node concept="3EZMnI" id="1jRYachI_an" role="1QoS34">
         <ref role="1k5W1q" node="5874YVFmClp" resolve="macroCtx" />
         <node concept="3F0ifn" id="1jRYachI_ao" role="3EZMnx">
-          <property role="1cu_pB" value="gtgu$YJ/attractsFocus" />
+          <property role="1cu_pB" value="0" />
           <property role="3F0ifm" value="[" />
           <ref role="1ERwB7" to="tpfj:gZDQqLq" resolve="MacroSymbol_Actions" />
           <ref role="1k5W1q" node="6ftRp$Xc22c" resolve="leftMacroBraket" />
@@ -1285,7 +1283,7 @@
       <node concept="3EZMnI" id="6ftRp$Xggs_" role="1QoS34">
         <ref role="1k5W1q" node="5874YVFmClp" resolve="macroCtx" />
         <node concept="3F0ifn" id="6ftRp$XggsA" role="3EZMnx">
-          <property role="1cu_pB" value="gtgu$YJ/attractsFocus" />
+          <property role="1cu_pB" value="0" />
           <property role="3F0ifm" value="[" />
           <ref role="1k5W1q" node="6ftRp$Xc22c" resolve="leftMacroBraket" />
           <ref role="1ERwB7" to="tpfj:gZDQqLq" resolve="MacroSymbol_Actions" />
