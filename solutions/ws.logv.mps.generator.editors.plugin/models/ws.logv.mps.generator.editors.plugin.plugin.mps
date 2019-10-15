@@ -520,7 +520,7 @@
           <node concept="9aQIb" id="6ftRp$XbVrQ" role="9aQIa">
             <node concept="3clFbS" id="6ftRp$XbVrR" role="9aQI4">
               <node concept="RRSsy" id="6ftRp$XbVJ6" role="3cqZAp">
-                <property role="RRSoG" value="gZ5fh_4/error" />
+                <property role="RRSoG" value="debug" />
                 <node concept="Xl_RD" id="6ftRp$XbVJ8" role="RRSoy">
                   <property role="Xl_RC" value="can't get model access for project" />
                 </node>

@@ -316,15 +316,15 @@
       <node concept="m$_yB" id="fPAH2n4$Sb" role="m$_yh">
         <ref role="m$_yA" node="fPAH2n4$Ps" resolve="ws.logv.mps.generator.editors.plugin" />
       </node>
-      <node concept="m$_yC" id="4MACRVwuJER" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      <node concept="m$_yC" id="6ftRp$XgvIB" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
       </node>
       <node concept="2pNNFK" id="6ftRp$XgqRM" role="20twgj">
         <property role="2pNNFO" value="idea-version" />
         <node concept="2pNUuL" id="6ftRp$XgqRS" role="2pNNFR">
           <property role="2pNUuO" value="since-build" />
           <node concept="2pMdtt" id="6ftRp$XgqRT" role="2pMdts">
-            <property role="2pMdty" value="192.1" />
+            <property role="2pMdty" value="191.1" />
           </node>
         </node>
         <node concept="3o6iSG" id="6ftRp$XgqRO" role="3o6s8t" />
