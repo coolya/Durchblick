@@ -1,3 +1,9 @@
+### New in 0.5
+    * renamed plugin to durchblick
+
+### New in 0.4
+    * Support for MPS 2019.1
+
 ### New in 0.3
     * Support for MPS 2019.2
     * Redesigned editors based on Jos suggestions
