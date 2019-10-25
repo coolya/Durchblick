@@ -24,7 +24,9 @@
         <property id="6666499814681447926" name="attrName" index="2pNUuO" />
         <child id="6666499814681541918" name="value" index="2pMdts" />
       </concept>
-      <concept id="1622293396948952339" name="jetbrains.mps.core.xml.structure.XmlText" flags="nn" index="3o6iSG" />
+      <concept id="1622293396948952339" name="jetbrains.mps.core.xml.structure.XmlText" flags="nn" index="3o6iSG">
+        <property id="1622293396948953704" name="value" index="3o6i5n" />
+      </concept>
     </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
@@ -297,7 +299,7 @@
       <property role="m$_wk" value="ws.logv.mps.generator.editors" />
       <node concept="3_J27D" id="fPAH2mYzoV" role="m$_yQ">
         <node concept="3Mxwew" id="fPAH2mYzpK" role="3MwsjC">
-          <property role="3MwjfP" value="Simplified MPS Generator editors" />
+          <property role="3MwjfP" value="Durchblick" />
         </node>
       </node>
       <node concept="3_J27D" id="fPAH2mYzoX" role="m_cZH">
@@ -329,13 +331,19 @@
         </node>
         <node concept="3o6iSG" id="6ftRp$XgqRO" role="3o6s8t" />
       </node>
+      <node concept="2pNNFK" id="5VCE9JNDnvg" role="20twgj">
+        <property role="2pNNFO" value="change-notes" />
+        <node concept="3o6iSG" id="5VCE9JNDnvm" role="3o6s8t">
+          <property role="3o6i5n" value="Renamed plugin to durchblick" />
+        </node>
+      </node>
       <node concept="2iUeEo" id="6ftRp$XgqSe" role="2iVFfd">
         <property role="2iUeEt" value="Kolja Dummann" />
         <property role="2iUeEu" value="https://logv.ws" />
       </node>
       <node concept="3_J27D" id="6ftRp$XgqSg" role="3s6cr7">
         <node concept="3Mxwew" id="6ftRp$XgqSi" role="3MwsjC">
-          <property role="3MwjfP" value="A new projection for generator macros to make them more readable." />
+          <property role="3MwjfP" value="Easier to read and reason  prejections for generator templates" />
         </node>
       </node>
     </node>

@@ -34,7 +34,7 @@ ext.dependencyRepositories = [
         'https://projects.itemis.de/nexus/content/repositories/mbeddr',
 ]
 
-def version = "0.4"
+def version = "0.5"
 
 repositories {
     for (repoUrl in project.dependencyRepositories) {
@@ -107,7 +107,7 @@ def releaseArtifacts = new File(artifactsDir, "ws.logv.mps.generator.editors")
 
 github {
     owner = 'coolya'
-    repo = 'mps-generator-editors'
+    repo = 'Durchblick'
     token =  System.getenv().GITHUB_TOKEN != null ? System.getenv().GITHUB_TOKEN : "empty"
     tagName =  "v-$version"
     targetCommitish = System.getenv().CI_COMMIT_SHA != null ? System.getenv().CI_COMMIT_SHA : "master"
