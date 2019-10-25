@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://coolya.github.io/Durchblick"
 languageCode = "en-us"
 title = "Durchblick"
 theme = "kube"
