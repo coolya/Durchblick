@@ -1,0 +1,18 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Durchblick"
+theme = "kube"
+description = "Durchblick is a plugin for JetBrains MPS that provides an alternate editor for generator templates."
+Paginate = 4
+publishDir = "../docs"
+[Params]
+  RSSLink = "/index.xml"
+  author = "Kolja Dummann" # add your company name
+  github = "coolya" # add your github profile name
+  twitter = "dimdidum" # add your twitter profile
+  email = "kolja.dummann@logv.ws"
+
+[[menu.main]]
+    name = "Faq"
+    weight = -100
+    url = "/faq/"

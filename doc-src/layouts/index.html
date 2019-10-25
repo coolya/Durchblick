@@ -1,0 +1,70 @@
+{{ define "title"}} {{ .Site.Title}} {{end}}
+{{ define "header"}} {{ partial "header" .}} {{end}}
+{{ define "main"}}
+
+<div id="main">
+  <div id="hero">
+    <img src="{{ "/img/glasses.svg" | relURL }}" width="164px" />
+    <h1>{{.Title}}</h1>
+    <p>{{.Description}}</p>
+  </div>
+  <div id="action-buttons">
+    <a class="button primary big" href="https://plugins.jetbrains.com/plugin/13073-simplified-mps-generator-editors/"
+      onclick="_gaq.push(['_trackEvent', 'kube', 'download']);">Download</a> <a class="button outline big"
+      href="https://github.com/coolya/Durchblick" onclick="_gaq.push(['_trackEvent', 'kube', 'github']);">View on
+      Github</a>
+    <p>You can also find it in the MPS plugin Marketplace by searching for
+      it from within <i>Plugins Settings</i> page.</p>
+  </div>
+  <div class="message focus" data-component="message"></span>
+    <i>Durchblick</i> is German for <mark>insight/transparency</mark>.
+  </div>
+  <div id="kube-features">
+    <div class="row gutters">
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Baseline" height="64" src="{{ "/img/easy.svg" | relURL }}" width="64">
+        </figure>
+        <h3>Reasoning</h3>
+        <p>Durchblick aims to provide easier and faster reasoning about generator templates by inlining information that is usually hidden in the inspector.</p>
+      </div>
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Typography" height="64" src="{{ "/img/download.svg" | relURL }}" width="64">
+        </figure>
+        <h3>Easy to Use</h3>
+        <p>No external dependencies. Installs directly from the plugin marketplace or via ZIP. Update are automatically handled by MPS.</p>
+      </div>
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Minimalism" height="64" src="{{ "/img/award.svg" | relURL }}" width="64">
+        </figure>
+        <h3>Reward <i>Good</i> Templates</h3>
+        <p>Templates with little code in the macros are encouraged by inlining them into the main editor. Guding you to put complex logic into seperate classes outside of the generator template.</p>
+      </div>
+    </div>
+    <div class="row gutters">
+      <img id="before-after" src="before-after.gif" />
+    </div>
+    <div class="row gutters">
+      <div class="col col-4 item">
+        <h4>FAQ</h4>
+        <p>Got more questions? Visit the <a href="/faq/">FAQ</a> page.</p>
+      </div>
+      <div class="col col-4 item">
+        <h4>Contribute</h4>
+        <p><i>Durchblick</i> is open source. All contributions (code or none code) are highly welcome ❤️. Take a look at
+          the existing <a href="https://github.com/coolya/Durchblick/issues">issues</a>, create <a
+            href="https://github.com/coolya/Durchblick/issues/new">new ones</a> with your
+          idea/question or open a pull request.</p>
+      </div>
+      <div class="col col-4 item">
+        <h4>License</h4>
+        <p>Durchblick licensed under <a href="https://opensource.org/licenses/Apache-2.0">Apache License 2.0</a>.<br>
+      Durchblick is absolutely free for personal or commercial use.</p>
+    </div>
+  </div>
+</div>
+</div>
+{{ end }}
+{{ define "footer"}} {{ partial "footer" .}} {{end}}
