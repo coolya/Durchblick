@@ -52,7 +52,7 @@ File scriptFile(String relativePath) {
     new File("$rootDir/build/generated/$relativePath")
 }
 
-def mpsBuild = "2020.1.4"
+def mpsBuild = "2020.2.2"
 
 // configs
 configurations {
