@@ -7,4 +7,6 @@
  * in the user guide at https://docs.gradle.org/4.6/userguide/multi_project_builds.html
  */
 
+//dummy change
+
 rootProject.name = 'mps-generator-editors'
