@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: coolya/action-pr-link@v0.1
+    - uses: coolya/action-pr-link@v1.0
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         modelix-url: "http://modelix.q60.de"  
