@@ -78,7 +78,7 @@ ext.defaultScriptArgs = ["-Dversion=$version", "-Dartifacts.root=${ext.artifacts
 task resolveMps(type: Copy) {
     dependsOn configurations.mps
     from {
-        configurations.mps.resolve().collect { zipTree(it) }
+         configurations.mps.resolve().collect { zipTree(it) }
     }
     into mpsDir
     doFirst { delete mpsDir }
