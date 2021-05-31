@@ -72,10 +72,17 @@
         <child id="5617550519002745378" name="macros" index="1l3spd" />
         <child id="5617550519002745372" name="layout" index="1l3spN" />
       </concept>
+      <concept id="8654221991637384182" name="jetbrains.mps.build.structure.BuildFileIncludesSelector" flags="ng" index="3qWCbU">
+        <property id="8654221991637384184" name="pattern" index="3qWCbO" />
+      </concept>
       <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
       <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
+      <concept id="5248329904287794596" name="jetbrains.mps.build.structure.BuildInputFiles" flags="ng" index="3LXTmp">
+        <child id="5248329904287794598" name="dir" index="3LXTmr" />
+        <child id="5248329904287794679" name="selectors" index="3LXTna" />
+      </concept>
       <concept id="4903714810883702019" name="jetbrains.mps.build.structure.BuildTextStringPart" flags="ng" index="3Mxwew">
         <property id="4903714810883755350" name="text" index="3MwjfP" />
       </concept>
@@ -117,10 +124,14 @@
       <concept id="3570488090019868065" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_AutoPluginLayoutType" flags="ng" index="pUk6x" />
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
+        <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
       <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
         <reference id="5253498789149547705" name="module" index="3bR37D" />
+      </concept>
+      <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
+        <child id="763829979718664967" name="files" index="3rtmxm" />
       </concept>
       <concept id="4278635856200794926" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyExtendLanguage" flags="ng" index="1Busua">
         <reference id="4278635856200794928" name="language" index="1Busuk" />
@@ -262,6 +273,22 @@
           <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
         </node>
       </node>
+      <node concept="3rtmxn" id="4Fqbw4RVL52" role="3bR31x">
+        <node concept="3LXTmp" id="4Fqbw4RVL53" role="3rtmxm">
+          <node concept="3qWCbU" id="4Fqbw4RVL54" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="398BVA" id="4Fqbw4RVL55" role="3LXTmr">
+            <ref role="398BVh" node="fPAH2mYvZe" resolve="home" />
+            <node concept="2Ry0Ak" id="4Fqbw4RVL56" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="4Fqbw4RVL57" role="2Ry0An">
+                <property role="2Ry0Am" value="ws.logv.mps.generator.editors.plugin" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1E1JtD" id="fPAH2mYvZ2" role="3989C9">
       <property role="BnDLt" value="true" />
@@ -292,6 +319,22 @@
       <node concept="1SiIV0" id="fPAH2mYznN" role="3bR37C">
         <node concept="1Busua" id="fPAH2mYznO" role="1SiIV1">
           <ref role="1Busuk" to="ffeo:7Kfy9QB6L6C" resolve="jetbrains.mps.lang.generator" />
+        </node>
+      </node>
+      <node concept="3rtmxn" id="4Fqbw4RVL59" role="3bR31x">
+        <node concept="3LXTmp" id="4Fqbw4RVL5a" role="3rtmxm">
+          <node concept="3qWCbU" id="4Fqbw4RVL5b" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="398BVA" id="4Fqbw4RVL5c" role="3LXTmr">
+            <ref role="398BVh" node="fPAH2mYvZe" resolve="home" />
+            <node concept="2Ry0Ak" id="4Fqbw4RVL5d" role="iGT6I">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="4Fqbw4RVL5e" role="2Ry0An">
+                <property role="2Ry0Am" value="ws.logv.mps.generator.editors" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
