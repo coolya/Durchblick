@@ -62,7 +62,7 @@ configurations {
 
 dependencies {
     mps "com.jetbrains:mps:$mpsBuild"
-    ant_lib "org.apache.ant:ant-junit:1.10.10"
+    ant_lib "org.apache.ant:ant-junit:1.10.11"
 }
 
 dependencyLocking {
