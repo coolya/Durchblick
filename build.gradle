@@ -16,7 +16,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.7.286.963066e'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.8.296.79f1c22'
     }
 
     configurations.classpath {
